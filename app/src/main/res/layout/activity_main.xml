@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.opet.projeto.MainActivity">
+
+    <EditText
+        android:id="@+id/editNomeProjeto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome do projeto"/>
+    <TextView
+        android:id="@+id/textInicioProjetoInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Início: __/__/____"/>
+    <TextView
+        android:id="@+id/textEntregaProjetoInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrega: __/__/____"/>
+    <CheckBox
+        android:id="@+id/checkFinalizadoInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O Projeto foi finalizado?" />
+    <Button
+        android:text="Salvar"
+        android:onClick="salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <GridLayout
+        android:rowCount="4"
+        android:columnCount="2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Nome Projeto:"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textNomeProjeto"
+            android:textSize="16sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Data de início do projeto: "
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textInicioProjeto"
+            android:textSize="16sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Data de entrega do projeto: "
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textEntregaProjeto"
+            android:textSize="16sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Foi finalizado? "
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/checkProjetoFinalizado"
+            android:textSize="16sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </GridLayout>
+
+
+
+</LinearLayout>
+
